@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
 
 <head>
@@ -82,13 +84,13 @@
                 <td>
 
                     <button id="bontonpasserenigme" onclick="passerenigme()"> Non </button>
-                    
+
                 </td>
 
                 <td>
 
                     <button id="bontonavoirindice" onclick="donnerindice()"> Avoir un indice <span id="indicedemande"></span> </button>
-                    
+
                 </td>
 
             </tr>
@@ -96,9 +98,9 @@
         </table>
 
         <p id="indice1" class="leger"> <br> Indice 1 : Essayez de vous mettre à la place des personnages </p>
-        
+
         <p id="indice2" class="leger"> <br> Indice 2 : Pensez aux réactions de chaque personnage dans la situation initiale. Pensez ensuite aux réactions de chaque personnage par rapport aux réactions des autres personnages. </p>
-        
+
         <p id="indice3" class="leger"> <br> Indice 3 : Il serait peut-être préférable d'utiliser votre cerveau pour résoudre cette énigme. </p>
 
         <br>
@@ -113,65 +115,65 @@
                     <input type="radio" id="reponse1" name="reponsealenigme1" value="Hélêne" checked>
                     <span class="radiobutton"></span>
                 </label> <br>
-                    
+
                 <label for="reponse2" class="labelderadiobutton"> <span class="labelreponse" id="labelreponse2"> Wury </span>
                     <input type="radio" id="reponse2" name="reponsealenigme1" value="Wury">
                     <span class="radiobutton"></span>
                 </label> <br>
-                    
+
                 <label for="reponse3" class="labelderadiobutton"> <span class="labelreponse" id="labelreponse3"> Heitor </span>
                     <input type="radio" id="reponse3" name="reponsealenigme1" value="Heitor">
                     <span class="radiobutton"></span>
                 </label> <br>
-                    
+
                 <label for="reponse4" class="labelderadiobutton"> <span class="labelreponse" id="labelreponse4"> Valodia </span>
                     <input type="radio" id="reponse4" name="reponsealenigme1" value="Valodia">
                     <span class="radiobutton"></span>
                 </label> <br>
 
             </fieldset>
-                
+
             <button id="bontonconfirmation" onclick="reponseenigme()"> Confirmer votre réponse </button>
-                    
+
         </div>
 
         <div id="enigmepassee">
-            
+
             <p> Personne n'a répondu au bout des dix minutes... Les aventuriers sont reconduis dans leur cellules. <br> Suite à
             cette énigme, personne n'est mort. Piètre compensation, car le moment de leur exécution approche. <br> Nos
             aventuriers ont cependant encore trois énigmes à résoudre. Ils peuvent toujours espérer survivre. </p>
-            
+
             <br>
 
             <a href="enigme2.html"> Passer à l'énigme suvante </a>
-        
+
         </div>
-        
+
         <div id="bonnereponse">
 
             <br>
-            
+
             <p> Quelque peu avant la fin des dix minutes, <span class="repondant"></span> annonce qu'<span class="genrerepondant"></span>
                 connaît la couleur de son chapeau de bagnard. <br> En effet, <span class="genrerepondant"></span> avait compris que
                 comme <span id="nonrepondant1"></span> ne répondait pas, son chapeau n'était pas de la même couleur que celui de
-                <span id="nonrepondant2"></span>. La conclusion s'imposait, son chapeau de bagnard était 
-                <span id="bonnecouleurchapeau"></span>. <br> Le directeur du centre carcéral libéra donc 
-                <span class="repondant"></span>, mais les autres héros restaient prisonniers, et ils avaient encore trois énigmes à 
+                <span id="nonrepondant2"></span>. La conclusion s'imposait, son chapeau de bagnard était
+                <span id="bonnecouleurchapeau"></span>. <br> Le directeur du centre carcéral libéra donc
+                <span class="repondant"></span>, mais les autres héros restaient prisonniers, et ils avaient encore trois énigmes à
                 passer pour s'en sortir tous vivants. </p>
-            
+
             <br>
 
             <a href="enigme2.html"> Passer à l'énigme suvante </a>
-        
+
         </div>
-        
+
         <div id="mauvaisereponse">
 
             <br>
-            
+
             <p> Quelque peu avant la fin des dix minutes, <span class="repondant"></span> annonce qu'<span class="genrerepondant"></span>
                 connaît la couleur de son chapeau de bagnard. <br> Cependant, <span class="genrerepondant"></span> est en incapacité de
-                répondre. Il ne lui reste plus qu'une chose à faire : tenter le tout pour le tout ! <br> Au bord du gouffre, 
+                répondre. Il ne lui reste plus qu'une chose à faire : tenter le tout pour le tout ! <br> Au bord du gouffre,
                 <span class="repondant"></span> annonce que son couvre-chef est <span id="mauvaisecouleurchapeau"></span>. Mauvaise
                 pioche ! <br> Le directeur du centre carcéral fit donc fusillier nos aventuriers, conformément à ce qu'il avait annoncé
                 précédemment. C'est ainsi que se finirent les aventures des membres de l'équipage, plombés à cause de leur manque de
@@ -179,11 +181,11 @@
 
             <br>
 
-            <p> <span class="gras">Vous êtes mort</span>. Mais ne vous inquiétez pas, vous ferez sûrement mieux la prochaine fois. 
+            <p> <span class="gras">Vous êtes mort</span>. Mais ne vous inquiétez pas, vous ferez sûrement mieux la prochaine fois.
             </p> <br>
 
             <a href="enigme1.html"> Retenter de répondre à l'énigme </a>
-        
+
         </div>
 
     </div>
