@@ -1,0 +1,44 @@
+Enigme 1
+
+*Image à éditer*
+
+Ci-dessus il y a 4 prisonniers, surveillés par un gardien, et répartis dans 2 cellules.
+Ils n'ont pas le droit de bouger donc ils ne peuvent voir que devant eux.
+Entre A et B il y a un mur de brique au travers duquel ils ne peuvent pas voir.
+Ils savent que deux d'entre eux portent un bonnet de bagnard noir et les deux autres un bonnet de bagnard blanc.
+Mais ils ne savent pas de quelle couleur ils sont eux-même coiffés.
+Afin d'éviter d'être éxécuté, un des prisonnier peut donner la couleur de son bonnet.
+Si l'un d'eux donne une fausse réponse, tous seront fusillées sur le champ.
+Si personne ne répond, ils seront éxécutés plus tard.
+Ils ne sont pas autorisés à parler entre eux, et ils ont dix minutes pour trouver la solution.
+
+Afin d'éviter d'être éxécuté, un des prisonnier peut donner la couleur de son bonnet.
+Si l'un d'eux donne une fausse réponse, tous seront fusillées.
+Ils ne sont pas autorisés à parler et ils ont dix minutes pour trouver la solution.
+
+Peut-il y avoir une personne, parmis eux, qui peut donner la couleur de son bonnet de bagnard ?
+
+
+Enigme 2
+
+Ou est Chalie carcéral
+
+
+Enigme 3
+
+Puzzle à la Trine
+
+
+Enigme 4
+
+*Image à éditer*
+
+Le dernier des bagnards à encore une chance de s'échapper.
+Il reçoit un couteau, le plan du complexe, et des instructions.
+Il doit parti de sa cellule pour arriver à la sortie pour s'échapper.
+On lui dit notamment que le jour J, on lui ouvrira la sortie en bas à gauche du plan.
+On lui dit aussi que la salle de surveillance sera 
+Quand on viendra pour l'emmener au lieu d'éxecution, voila ce qu'il devra faire :
+- Tuer chaque surveillant (il y en a un par salle) pour éviter toute propagation de l'évasion
+- Ne surtout pas repasser dans une salle contenant déjà un cadavre
+- Sortir par la porte en bas à droite

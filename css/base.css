@@ -1,0 +1,457 @@
+/* Polices d'écriture */
+
+@font-face {
+    font-family: SpecialElite;
+    src: url('../fonts/SpecialElite-Regular.ttf');
+}
+
+@font-face {
+    font-family: Oswald-Bold;
+    src: url('../fonts/Oswald-Bold.ttf');
+}
+
+@font-face {
+    font-family: Oswald-ExtraLight;
+    src: url('../fonts/Oswald-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: Oswald-Light;
+    src: url('../fonts/Oswald-Light.ttf');
+}
+
+@font-face {
+    font-family: Oswald-Medium;
+    src: url('../fonts/Oswald-Medium.ttf');
+}
+
+@font-face {
+    font-family: Oswald-Regular;
+    src: url('../fonts/Oswald-Regular.ttf');
+}
+
+@font-face {
+    font-family: Oswald-SemiBold;
+    src: url('../fonts/Oswald-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: DDC-Ash;
+    src: url('../fonts/DCC - Ash.otf');
+}
+
+
+/* Règles de style générales */
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body, html {
+
+    min-height: 100vh;
+    
+    background-color: #33221b;
+    background-image: url("../medias/fonddecranaccueil.png");
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: Oswald-Regular, sans-serif;
+    font-size: calc(16px + 1vw);
+    color: #fff;
+    
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+
+    scroll-behavior: smooth;
+
+}
+
+
+
+a {
+
+	font-family: Oswald-Regular;
+	line-height: 1.7;
+    color: #bfa17b;
+
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    
+    margin: 0px;
+
+}
+
+a:focus {
+
+    outline: none !important;
+    
+}
+
+a:hover {
+
+	text-decoration: none;
+    color: #faca2c;
+    
+}
+
+h1,h2,h3,h4,h5,h6 {
+
+    margin: 0px;
+    
+}
+
+h1 {
+
+    font-family: DDC-Ash;
+    font-size: calc(5vw + 30px);
+    padding-bottom: 15px;
+    letter-spacing: calc(0.3vw + 1.8px);
+    white-space: nowrap;
+    padding-top: 10px;
+
+}
+
+h2 {
+
+    font-family: SpecialElite;
+    font-size: calc(1.6vw + 6px);
+
+}
+
+p {
+
+    margin: 0px;
+    
+}
+
+ul, li {
+
+	margin: 0px;
+    list-style-type: none;
+    
+}
+
+fieldset {
+
+    border-style: none;
+
+}
+
+td {
+
+    padding-right: 2vw;
+
+}
+
+.link0 {
+
+    padding-right: 15%;
+    display: inline-block;
+
+}
+
+.link1 {
+
+    display: inline-block;
+
+}
+
+input {
+
+	outline: none;
+    border: none;
+    
+}
+
+textarea {
+
+    outline: none;
+    border: none;
+
+}
+
+textarea:focus, input:focus {
+
+    border-color: transparent !important;
+
+}
+
+input::-webkit-input-placeholder { color: #999999; }
+input:-moz-placeholder { color: #999999; }
+input::-moz-placeholder { color: #999999; }
+input:-ms-input-placeholder { color: #999999; }
+
+textarea::-webkit-input-placeholder { color: #999999; }
+textarea:-moz-placeholder { color: #999999; }
+textarea::-moz-placeholder { color: #999999; }
+textarea:-ms-input-placeholder { color: #999999; }
+
+iframe {
+
+    border: none !important;
+    
+}
+
+button {
+
+	padding: 0px calc(4px + 0.25vw);
+	font-family: Oswald-Regular, sans-serif;
+    font-size: calc(16px + 1vw);
+    color: #fff;
+	background: none;
+	border-radius: calc(4px + 0.25vw);
+    border: calc(2px + 0.125vw) solid #fff;
+
+}
+
+button:hover {
+
+    background-color: rgba(255, 255, 255, 0.4);
+    
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+
+}
+
+button:active {
+
+    color: #faca2c;
+    border: calc(2px + 0.125vw) solid #faca2c;
+    
+	transition: all 0s;
+	-webkit-transition: all 0s;
+    -o-transition: all 0s;
+    -moz-transition: all 0s;
+
+}
+
+button:disabled {
+
+    color: #bfa17b;
+    border: calc(2px + 0.125vw) solid #bfa17b;
+
+}
+
+button:disabled:hover {
+
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+
+/* Contenu en-tête*/
+
+#entete {
+
+    position: fixed;
+    z-index: 10;
+
+    width: 100%;
+
+    background: #33221b;
+    background: -webkit-linear-gradient(left, #33221b, #2a1c16);
+    background: -o-linear-gradient(left, #33221b, #2a1c16);
+    background: -moz-linear-gradient(left, #33221b, #2a1c16);
+    background: linear-gradient(left, #33221b, #2a1c16);
+
+}
+
+#contenuentete {
+
+    width: 100%;
+
+}
+
+#contenuentete tr {
+
+    width: 100%;
+
+}
+
+
+#icon {
+
+    width: calc(20px + 4vw);
+
+}
+
+#soustitre {
+
+    width: 100%;
+    text-align: right;
+    align-content: right;
+
+}
+
+#lignesentete {
+
+    padding: 0px 5%;
+
+}
+
+.lignejaune {
+
+    margin: 0px 0px;
+    width: 50%;
+    height: 4px;
+
+    background-color: #faca2c;
+    border: none;
+
+    margin-left: -6%;
+    padding-right: 111.55%;
+
+}
+
+.lignenoire {
+
+    margin: 0px 0px;
+    width: 50%;
+    height: 4px;
+    
+    background-color: #000;
+    border: none;
+
+    margin-left: -6%;
+    padding-right: 111.55%;
+}
+
+
+/* Contenu principal */
+
+#contenu {
+
+    min-height: 100vh;
+
+    padding: calc(75px + 8.5vw) 5%;
+    padding-bottom: 5%;
+
+}
+
+
+/* Classes et Identifiants */
+
+.gras {
+
+    font-family: Oswald-Bold;
+
+}
+
+.leger {
+
+    font-family: Oswald-Light;
+
+}
+
+#imageenigme {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(200px + 40vw);
+    max-width: 100%;
+    height: auto;
+
+}
+
+.espace {
+
+    display: block;
+    content: "";
+    margin-top: 60px;
+
+}
+
+.labelderadiobutton {
+
+    z-index: 1;
+    display: block;
+    position: relative;
+    padding-left: calc(20px + 1.125vw);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.labelderadiobutton input {
+
+    z-index: 1;
+    position: absolute;
+    opacity: 0;
+
+}
+
+.radiobutton {
+
+    z-index: 1;
+    position: absolute;
+    top: calc(6px + 0.375vw);
+    left: 0px;
+    height: calc(12px + 0.75vw);
+    width: calc(12px + 0.75vw);
+    background-color: none;
+    border: calc(2px + 0.125vw) solid #fff;
+    border-radius: 50%;
+    
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+
+}
+
+.labelderadiobutton:hover input ~ .radiobutton {
+
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.4);
+
+}
+
+.labelderadiobutton input:checked ~ .radiobutton {
+
+    z-index: 1;
+    background-color: none;
+
+}
+
+.radiobutton:after {
+
+    z-index: 1;
+    content: "";
+    position: absolute;
+    display: none;
+
+}
+
+.labelderadiobutton input:checked ~ .radiobutton:after {
+
+    z-index: 1;
+    display: block;
+
+}
+
+.labelderadiobutton .radiobutton:after {
+
+    z-index: 1;
+ 	top: calc(2px + 0.125vw);
+	left: calc(2px + 0.125vw);
+	width: calc(4px + 0.25vw);
+	height: calc(4px + 0.25vw);
+	border-radius: 50%;
+    background: #fff;
+    
+}
