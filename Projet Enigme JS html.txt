@@ -34,11 +34,11 @@ Enigme 4
 *Image à éditer*
 
 Le dernier des bagnards à encore une chance de s'échapper.
-Il reçoit un couteau, le plan du complexe, et des instructions.
+Il reçoit un pistolet tranquilisant et 15 flechettes somnifères le plan du complexe, et des instructions.
 Il doit parti de sa cellule pour arriver à la sortie pour s'échapper.
 On lui dit notamment que le jour J, on lui ouvrira la sortie en bas à gauche du plan.
 On lui dit aussi que la salle de surveillance sera 
 Quand on viendra pour l'emmener au lieu d'éxecution, voila ce qu'il devra faire :
-- Tuer chaque surveillant (il y en a un par salle) pour éviter toute propagation de l'évasion
+- Endormir chaque surveillant (il y en a un par salle) pour éviter toute propagation rapide de la nouvelle de l'évasion
 - Ne surtout pas repasser dans une salle contenant déjà un cadavre
 - Sortir par la porte en bas à droite
