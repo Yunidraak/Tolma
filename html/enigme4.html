@@ -53,24 +53,118 @@
 
     <div id="contenu">
 
-        <p> Après leur aventure précédente, quatre des membres de l'équipage se
-            voient projetés sur une tomate volante. <br> Peu après, on commence à se réveiller. Nos aventuriers ont été
-            faits prisonniers au XIX<sup>ème</sup> siècle pour abus d'alcool conséquent, divagations sur la voie
-            publique et non
-            respect de l'uniforme d'un agent, qu'il a bien fallu laver. <br><br> De plus, en dépit de la faible
-            importance
-            des accusations, l'agent en question était le neuveu du comte de Reblochon, éminent memebre de la cour.
-            <br><br> Voilà donc nos héros condamnés à mort ! <br><br> Heureusement pour vous, il leur reste une dernière
-            chance. Le directeur du centre carcéral vous gardant en attendant votre exécution est plutôt joueur. <br> Il
-            laissera à chacun des quatre aventuriers la chance d'être relachés. <br> Pour cela, vous devrez répondre à
-            chacune des quatre énigmes se présentant à vous. Chaque bonne réponse vous permettra de libérer un des
-            membres de l'équipage. Cependant, si vous répondez mal, vous savez à quoi vous attendre... </p>
+        <p> On annonce à Heitor qu'il va être emmené à la guillotine demain à 16h30. Il lui reste cependant une chance de
+            s'échapper. Il reçoit de la part du directeur un pistolet tranquilisant, 15 flechettes somnifères le plan du
+            complexe, et des instructions. Il doit partir de sa cellule puis arriver à la sortie pour s'échapper. On lui dit
+            notamment que le jour J, on lui ouvrira la sortie en bas à gauche du plan. On lui dit aussi que la sa cellule se
+            vera ouverte au même moment. Quand on viendra pour l'emmener au lieu d'éxecution, voila ce qu'il devra faire : </p>
 
         <br>
 
-        <a href="enigme1.html"> Passer à la première énigme </a>
+        <li>
+
+            <ul> Endormir chaque surveillant (il y a une personne éveillée par salle, au début) pour éviter toute propagation rapide
+                de la nouvelle de l'évasion. </ul>
+
+            <br>
+
+            <ul> Ne surtout pas repasser dans une salle contenant déjà un garde endormi, cela le réveillerait et compromettrait
+                l'évasion. </ul>
+
+            <br>
+
+            <ul> Sortir par la porte en bas à droite, il n'y a aucune autre sortie. </ul>
+
+            <br>
+
+        </li>
+
+        <br>
+
+        <canvas id="canvas"></canvas>
+        
+        <br> 
+        
+        <div id="sousTitreCanvas">
+            
+            <p class="leger"> Pour vous déplacer, utilisez les touches Z, Q, S et D, <br> ou cliquez sur une case adjacente. </p>
+        
+        </div>
+        
+        <br> <br>
+            
+            <table>
+            
+                <tr>
+            
+                    <td>
+            
+                        <button id="bontonrepondreenigme" onclick="repondreenigme()"> Confirmer votre réponse </button>
+            
+                    </td>
+            
+                    <td>
+            
+                        <button id="bontonpasserenigme" onclick="passerenigme()"> Recommencer </button>
+            
+                    </td>
+            
+                    <td>
+            
+                        <button id="bontonavoirindice" onclick="donnerindice()"> Avoir un indice <span id="indicedemande"></span>
+                        </button>
+            
+                    </td>
+            
+                </tr>
+            
+            </table>
+            
+            <p id="indice1" class="leger"> <br> Indice 1 : Faites attention aux informations entre paranthèses. Elles peuvent être
+                capitale pour résoudre cette énigme </p>
+
+            <p id="indice2" class="leger"> <br> Indice 2 : Heitor n'a pas le droit de repasser dans une salle dans laquelle se
+                trouve un garde endormi. Cela ne l'interdit pas pour autant de retourner dans sa geôle. </p>
+    
+            <p id="indice3" class="leger"> <br> Indice 3 : Il serait peut-être préférable d'utiliser votre cerveau pour résoudre
+                cette énigme. </p>
+
+        <div id="bonnereponse">
+
+            <br>
+
+            <p> Heitor a réussi à suivre les consignes sans gaffer ! <br> Désormais libre, il s'enfuit et rejoint l'Ascheumne, qui
+                attendait son retour devant Tolma. <br> Une fois Heitor à bord, l'équipage s'envole vers de nouvelles aventures,
+                sans demander son reste. </p>
+
+            <br>
+        
+            <a href="denouement.html"> Passer au bilan de votre aventure </a>
+        
+        </div>
+        
+        <div id="mauvaisereponse">
+        
+            <br>
+        
+            <p> Heitor n'a pas réussi à suivre les consignes. Il a gaffé ! <br> Un gardien lance l'alerte, c'est le branle-bas de
+                combat ! <br> Les gardiens emmènent alors Heitor sur la place publique, pourvue d'une guillotine.<br> Désormais
+                raccourci d'une tête, il ne peut s'enfuir pour rejoindre l'Ascheumne, qui attendait son retour devant Tolma. <br>
+                L'équipage, sans demander son reste, s'envole vers de nouvelles aventures. </p>
+
+            <br>
+        
+            <p> <span class="gras">Heitor est mort</span>. Mais ne vous inquiétez pas, vous ferez sûrement mieux la prochaine
+                fois.
+            </p> <br>
+        
+            <a href="denouement.html"> Passer au bilan de votre aventure </a>
+        
+        </div>
 
     </div>
+
+    <script src="../js/enigme4.js"></script>
 
 </body>
 
