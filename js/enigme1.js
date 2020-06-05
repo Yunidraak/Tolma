@@ -40,7 +40,7 @@ function repondreenigme() {
     document.getElementById("bontonrepondreenigme").style.color = "#faca2c";
 
     document.getElementById("enigmefaite").style.display = "block";
-    localStorage.setItem("reponseenigmeprecedente", "sanvapalfersitureload");
+    localStorage.setItem("reponseenigmeprecedente", "bo");
 
 }
 
@@ -55,7 +55,8 @@ function passerenigme() {
     document.getElementById("bontonpasserenigme").style.color = "#faca2c";
 
     document.getElementById("enigmepassee").style.display = "block";
-    localStorage.setItem("reponseenigmeprecedente", "ayayareyaredaze");
+    
+    localStorage.setItem("reponseenigmeprecedente", "mi");
 
 }
 
@@ -77,6 +78,8 @@ function reponseenigme() {
         document.getElementById("mauvaisecouleurchapeau").innerHTML = "blanc";
         changerlestyledesradiobuttons();
 
+        localStorage.setItem("reponseenigmeprecedente", "bo");
+
     } else if (document.getElementById("reponse2").checked === true) {
 
         document.getElementById("bonnereponse").style.display = "block";
@@ -91,6 +94,8 @@ function reponseenigme() {
         document.getElementById("bonnecouleurchapeau").innerHTML = "blanc";
         document.getElementById("mauvaisecouleurchapeau").innerHTML = "noir";
         changerlestyledesradiobuttons();
+
+        localStorage.setItem("reponseenigmeprecedente", "ay");
 
     } else if (document.getElementById("reponse3").checked === true) {
 
@@ -107,6 +112,8 @@ function reponseenigme() {
         document.getElementById("mauvaisecouleurchapeau").innerHTML = "blanc";
         changerlestyledesradiobuttons();
 
+        localStorage.setItem("reponseenigmeprecedente", "bo");
+
     } else if (document.getElementById("reponse4").checked === true) {
 
         document.getElementById("mauvaisereponse").style.display = "block";
@@ -121,6 +128,8 @@ function reponseenigme() {
         document.getElementById("bonnecouleurchapeau").innerHTML = "blanc";
         document.getElementById("mauvaisecouleurchapeau").innerHTML = "noir";
         changerlestyledesradiobuttons();
+
+        localStorage.setItem("reponseenigmeprecedente", "bo");
 
     } else {
 

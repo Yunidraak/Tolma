@@ -1,3 +1,6 @@
+/* Aucun JS n'est utilisé dans l'index. Il s'agit seulement de stocker des fonctions qui
+pourront aider à développer ce site
+
 
 function draw() {
     var canvas = document.getElementById("canvas");
@@ -195,3 +198,5 @@ if (localStorage.getItem("sphoto") == "gégé") {
 } else {
     alert("Une erreur est survenue :( Cela est problablement arrivé car vous avez suprimmé vos données. Merci de re-remplir le formulaire");
 }
+
+*/
