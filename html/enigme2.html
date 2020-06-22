@@ -3,14 +3,16 @@
 <html>
 
 <head>
+
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="icon" href="../medias/logo.ico" />
     <meta charset="UTF-8">
     <title> Tolma - Enigme 2 </title>
+
 </head>
 
 <body>
-
+    
     <div id="entete">
 
         <table id="contenuentete">
@@ -33,7 +35,7 @@
 
                 <td id="soustitre">
 
-                    <h2> A trouver </h2>
+                    <h2> La serrure aux neuf hexagones </h2>
 
                 </td>
 
@@ -51,26 +53,274 @@
 
     </div>
 
-    <div id="contenu">
+    <div id="enigmesfaites" class="contenu">
 
-        <p> Après leur aventure précédente, quatre des membres de l'équipage se
-            voient projetés sur une tomate volante. <br> Peu après, on commence à se réveiller. Nos aventuriers ont été
-            faits prisonniers au XIX<sup>ème</sup> siècle pour abus d'alcool conséquent, divagations sur la voie
-            publique et non
-            respect de l'uniforme d'un agent, qu'il a bien fallu laver. <br><br> De plus, en dépit de la faible
-            importance
-            des accusations, l'agent en question était le neuveu du comte de Reblochon, éminent memebre de la cour.
-            <br><br> Voilà donc nos héros condamnés à mort ! <br><br> Heureusement pour vous, il leur reste une dernière
-            chance. Le directeur du centre carcéral vous gardant en attendant votre exécution est plutôt joueur. <br> Il
-            laissera à chacun des quatre aventuriers la chance d'être relachés. <br> Pour cela, vous devrez répondre à
-            chacune des quatre énigmes se présentant à vous. Chaque bonne réponse vous permettra de libérer un des
-            membres de l'équipage. Cependant, si vous répondez mal, vous savez à quoi vous attendre... </p>
+        <p> Suite aux évenements précédents, les prisonniers restants sont reconduis dans leurs cellules. C'est alors que
+            Valodia est emporté dans une geôle à l'écart des autres. Les gardes l'enferment dedans. Il s'agit d'une petite
+            salle, de 3 mètres sur 3 mètres sur 3 mètres. Elle a des murs lisses et dépourvus de presque toute aspérité. Elle
+            remarque à l'opposé de la porte un ensemble de neuf trous en forme d'hexagones, percés en leur milieux, et un 
+            bouton. <br> une pochette se trouve dans la pièce, à même le sol. Elle contient une enveloppe du directeur de la 
+            prison. <br> <br> "Bienvenue à votre épreuve personelle, Valodia Syna. <br> Pour sortir d'ici, vous devrez utiliser 
+            les clefs que vous trouverez au fond de cette enveloppe, et vos méninges. Comme vous pouvez le constater, ces neuf 
+            clefs à la tête héxagonale, et numérotées de 1 à 9 sont faites pour entrer dans les trous du mur. Vous devrez bien 
+            placer toutes les clefs puis confirmer votre choix en appuyant sur le bouton pour confirmer votre réponse. Pour 
+            bien placer ces clefs, suivez les indications suivantes :
+
+            <li>
+
+                <ul>
+                    - Toutes clef doivent être positionnées dans le mur
+                </ul>
+
+                <ul>
+                    - Pour chaque serrure, la clef correspondante doit avoir pour multiple la somme de toutes les clefs adjacentes
+                </ul>
+
+                <ul>
+                    - Vous n'avez le droit qu'à une confirmation
+                </ul>
+
+                <ul>
+                    - Si la réponse n'est pas bonne, vous mourrez à coup sûr. (Comment ? Ca c'est une surprise)
+                </ul>
+
+            </li>
+
+            Amusez vous bien !" </p>
+
+        <br><br>
+
+        <div class="colonne">
+
+            <h2> Serrure du mur </h2>
+
+            <h2> Clefs non positionnées </h2>
+
+        </div>
 
         <br>
 
-        <a href="enigme1.html"> Passer à la première énigme </a>
+        <div class="colonne">
+
+            <img id="image1enigme2" src="../medias/image1enigme2.png">
+
+            <img class="image2enigme2" src="../medias/image2enigme2.png">
+
+            <img class="image2enigme2" src="../medias/image2enigme2.png">
+
+            <img class="image2enigme2" src="../medias/image2enigme2.png">
+
+            <img class="image2enigme2" src="../medias/image2enigme2.png">
+
+            <img class="image2enigme2" src="../medias/image2enigme2.png">
+
+            <img class="image2enigme2" src="../medias/image2enigme2.png">
+
+            <img class="image2enigme2" src="../medias/image2enigme2.png">
+
+            <img class="image2enigme2" src="../medias/image2enigme2.png">
+
+            <img class="image2enigme2" src="../medias/image2enigme2.png">
+
+        </div>
+
+        <div class="colonne" id="contenuaprendre">
+
+            <div class="dispositionhexagones1">
+        
+                <div id="hexagone1" class="divdragdrop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+            </div>
+
+            <div class="dispositionhexagones2">
+            
+                <div id="hexagone2" class="divdragdrop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            
+                <div id="hexagone3" class="divdragdrop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+            </div>
+
+            <div class="dispositionhexagones3">
+            
+                <div id="hexagone4" class="divdragdrop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            
+                <div id="hexagone5" class="divdragdrop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            
+                <div id="hexagone6" class="divdragdrop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+            </div>
+
+            <div class="dispositionhexagones4">
+            
+                <div id="hexagone7" class="divdragdrop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            
+                <div id="hexagone8" class="divdragdrop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+            </div>
+
+            <div class="dispositionhexagones5">
+            
+                <div id="hexagone9" class="divdragdrop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+            </div>
+
+            <div id="tirette" class="dispositionhexagones6">
+
+                <!-- Les dixaines représentent les divs qui contiennent les clefs à déplacer -->
+                
+                <div id="hexagone11" class="divdragdrop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="drag" id="drag1" draggable="true" ondragstart="drag(event)">
+                        <p class="chiffreshexagones"> 1 </p>
+                    </div>
+                </div>
+
+                <div id="hexagone12" class="divdragdrop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="drag" id="drag2" draggable="true" ondragstart="drag(event)">
+                        <p class="chiffreshexagones"> 2 </p>
+                    </div>
+                </div>
+
+                <div id="hexagone13" class="divdragdrop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="drag" id="drag3" draggable="true" ondragstart="drag(event)">
+                        <p class="chiffreshexagones"> 3 </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="dispositionhexagones6">
+        
+                <div id="hexagone14" class="divdragdrop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="drag" id="drag4" draggable="true" ondragstart="drag(event)">
+                        <p class="chiffreshexagones"> 4 </p>
+                    </div>
+                </div>
+
+                <div id="hexagone15" class="divdragdrop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="drag" id="drag5" draggable="true" ondragstart="drag(event)">
+                        <p class="chiffreshexagones"> 5 </p>
+                    </div>
+                </div>
+
+                <div id="hexagone16" class="divdragdrop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="drag" id="drag6" draggable="true" ondragstart="drag(event)">
+                        <p class="chiffreshexagones"> 6 </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="dispositionhexagones6">
+                
+                <div id="hexagone17" class="divdragdrop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="drag" id="drag7" draggable="true" ondragstart="drag(event)">
+                        <p class="chiffreshexagones"> 7 </p>
+                    </div>
+                </div>
+                
+                <div id="hexagone18" class="divdragdrop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="drag" id="drag8" draggable="true" ondragstart="drag(event)">
+                        <p class="chiffreshexagones"> 8 </p>
+                    </div>
+                </div>
+                
+                <div id="hexagone19" class="divdragdrop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="drag" id="drag9" draggable="true" ondragstart="drag(event)">
+                        <p class="chiffreshexagones"> 9 </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <table id="boutonsenigme2">
+
+            <tr>
+
+                <td>
+
+                    <button id="bontonrepondreenigme" onclick="repondreenigme()"> Confirmer votre réponse </button>
+
+                </td>
+            
+                <td>
+            
+                    <button id="bontonpasserenigme" onclick="passerenigme()"> Recommencer </button>
+            
+                </td>
+
+                <td>
+
+                    <button id="bontonavoirindice" onclick="donnerindice()"> Avoir un indice <span
+                            id="indicedemande"></span> </button>
+
+                </td>
+
+            </tr>
+
+        </table>
+
+        <p id="indice1" class="leger"> <br> Indice 1 : Essayez de raisonner sous forme mathématique. Pour toute case
+            x<sub>1</sub>, la somme des cases adjacentes x<sub>2</sub> + ... + x<sub>n</sub> est un multiple de la case
+            x<sub>1</sub>. <br> On obtient donc : (x<sub>2</sub> + ... + x<sub>n</sub>) / x<sub>1</sub> = un entier</p>
+
+        <p id="indice2" class="leger"> <br> Indice 2 : Pour vous faciliter la tâche, mettez la clef n°6 au  centre. </p>
+
+        <p id="indice3" class="leger"> <br> Indice 3 : Il serait peut-être préférable d'utiliser votre cerveau pour résoudre
+            cette énigme. </p>
+
+        <br>
+
+        <div id="bonnereponse">
+
+            <p> Valodia a réussi à suivre les consignes sans gaffer ! <br> Une porte secrète s'ouvre au niveau de la serrure, elle 
+                conduit à l'extérieur du complexe carcéral. <br> Désormais libre, Valodia s'enfuit et rejoint l'Ascheumne, qui
+                attendait son retour devant Tolma. <br> Une fois Valodia à bord, l'équipage se réjouit, sans perdre le Nord. <br> Il 
+                reste encore deux de nos héros à sauver. </p>
+
+            <br>
+
+            <a href="enigme3.html"> Passer à l'énigme suivante </a>
+
+        </div>
+
+        <div id="mauvaisereponse">
+        
+            <p> Valodia n'a pas réussi à suivre les consignes. Elle a gaffé ! <br> Notre héroïne entend le bruit de fumée qui
+                commence à sortir par la serrure ! <br> Valodia panique, elle ne peut s'enfuir pour rejoindre l'Ascheumne, qui
+                attendait son retour devant Tolma. Sa vie se termina quelques instants plus tard, dans une position pitoresque,
+                après une courte mais non moins fatale inhalation de sulfure d'hydrogène. <br> L'équipage peste contre son infortune
+                et pleure Valodia, mais il ne peut se permettre de perdre le Nord. <br> Il reste encore deux de nos héros à sauver.
+            </p>
+            
+            <br>
+
+            <p> <span class="gras">Valodia est morte</span>. Mais ne vous inquiétez pas, vous ferez sûrement mieux la prochaine
+                fois.
+            </p> <br>
+
+            <a href="enigme3.html"> Passer à l'énigme suivante </a>
+
+        </div>
 
     </div>
+
+    <div id="enigmesafaire" class="contenu">
+
+        <p> <span class="gras">Oups ! Il semble y avoir une coquille dans vos données !</span> <br><br> Peut-être
+            n'avez-vous pas répondu à toutes les énigmes, mais en tout cas, une chose est sûre : <br> En raison d'un problème
+            technique (venant sûrement de votre part pour avoir voulu faire le malin sans maîtriser ce que vous avez fait), vous
+            ne pouvez pas accéder à cette énigme ! <br> Pour régler ce problème, vous pouvez soit reprendre l'énigme
+            à laquelle vous n'avez pas répondu, soit recommencer depuis le début. <br><br> Bonne chance ! </p>
+
+        <br>
+
+        <a href="enigme1.html"> Recommencer à la première énigme </a>
+
+    </div>
+
+    <script src="../js/enigme2.js"></script>
 
 </body>
 

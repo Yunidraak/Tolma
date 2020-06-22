@@ -51,13 +51,14 @@
 
     </div>
 
-    <div id="contenu">
+    <div id="enigmesfaites" class="contenu">
 
         <p> On annonce à Heitor qu'il va être emmené à la guillotine demain à 16h30. Il lui reste cependant une chance de
-            s'échapper. Il reçoit de la part du directeur un pistolet tranquilisant, 15 flechettes somnifères le plan du
-            complexe, et des instructions. Il doit partir de sa cellule puis arriver à la sortie pour s'échapper. On lui dit
-            notamment que le jour J, on lui ouvrira la sortie en bas à gauche du plan. On lui dit aussi que la sa cellule se
-            vera ouverte au même moment. Quand on viendra pour l'emmener au lieu d'éxecution, voila ce qu'il devra faire : </p>
+            s'échapper. Il reçoit de la part du directeur un pistolet tranquilisant, 15 fléchettes somnifères, le plan du
+            complexe, et des instructions. Il doit partir de sa cellule (en jaune sur le plan) puis arriver à la sortie pour
+            s'échapper. On lui dit notamment que le jour J, on lui ouvrira la sortie en bas à droite du plan. On lui dit aussi
+            que sa cellule sera ouverte au même moment. Quand on viendra pour l'emmener au lieu d'éxecution, voila ce
+            qu'il devra faire : </p>
 
         <br>
 
@@ -93,41 +94,41 @@
         
         <br> <br>
             
-            <table>
+        <table>
             
-                <tr>
+            <tr>
             
-                    <td>
+                <td>
             
-                        <button id="bontonrepondreenigme" onclick="repondreenigme()"> Confirmer votre réponse </button>
+                    <button id="bontonrepondreenigme" onclick="repondreenigme()"> Confirmer votre réponse </button>
             
-                    </td>
+                </td>
             
-                    <td>
+                <td>
             
-                        <button id="bontonpasserenigme" onclick="passerenigme()"> Recommencer </button>
+                    <button id="bontonpasserenigme" onclick="passerenigme()"> Recommencer </button>
             
-                    </td>
+                </td>
             
-                    <td>
+                <td>
             
-                        <button id="bontonavoirindice" onclick="donnerindice()"> Avoir un indice <span id="indicedemande"></span>
-                        </button>
+                    <button id="bontonavoirindice" onclick="donnerindice()"> Avoir un indice <span id="indicedemande"></span>
+                    </button>
             
-                    </td>
+                </td>
             
-                </tr>
+            </tr>
             
-            </table>
+        </table>
             
-            <p id="indice1" class="leger"> <br> Indice 1 : Faites attention aux informations entre paranthèses. Elles peuvent être
-                capitale pour résoudre cette énigme </p>
+        <p id="indice1" class="leger"> <br> Indice 1 : Faites attention aux informations entre paranthèses. Elles peuvent être
+            capitale pour résoudre cette énigme </p>
 
-            <p id="indice2" class="leger"> <br> Indice 2 : Heitor n'a pas le droit de repasser dans une salle dans laquelle se
-                trouve un garde endormi. Cela ne l'interdit pas pour autant de retourner dans sa geôle. </p>
+        <p id="indice2" class="leger"> <br> Indice 2 : Heitor n'a pas le droit de repasser dans une salle dans laquelle se
+            trouve un garde endormi. Cela ne l'interdit pas pour autant de retourner dans sa geôle. </p>
     
-            <p id="indice3" class="leger"> <br> Indice 3 : Il serait peut-être préférable d'utiliser votre cerveau pour résoudre
-                cette énigme. </p>
+        <p id="indice3" class="leger"> <br> Indice 3 : Il serait peut-être préférable d'utiliser votre cerveau pour résoudre
+            cette énigme. </p>
 
         <div id="bonnereponse">
 
@@ -161,6 +162,20 @@
             <a href="denouement.html"> Passer au bilan de votre aventure </a>
         
         </div>
+
+    </div>
+
+    <div id="enigmesafaire" class="contenu">
+
+        <p> <span class="gras">Oups ! Il semble y avoir une coquille dans vos données !</span> <br><br> Peut-être
+            n'avez-vous pas répondu à toutes les énigmes, mais en tout cas, une chose est sûre : <br> En raison d'un problème
+            technique (venant sûrement de votre part pour avoir voulu faire le malin sans maîtriser ce que vous avez fait), vous
+            ne pouvez pas accéder à cette énigme ! <br> Pour régler ce problème, vous pouvez soit reprendre l'énigme
+            à laquelle vous n'avez pas répondu, soit recommencer depuis le début. <br><br> Bonne chance ! </p>
+
+        <br>
+
+        <a href="enigme1.html"> Recommencer à la première énigme </a>
 
     </div>
 

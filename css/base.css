@@ -52,9 +52,9 @@
 body, html {
 
     min-height: 100vh;
-    
+
     background-color: #33221b;
-    background-image: url("../medias/fonddecranaccueil.png");
+    background: url("../medias/fonddecranaccueil.png");
     background-size: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -142,8 +142,13 @@ ul, li {
 }
 
 fieldset {
+    
+	font-family: Oswald-Regular, sans-serif;
+    font-size: calc(16px + 1vw);
+    color: #fff;
 
-    border-style: none;
+    background: none;
+    border: none;
 
 }
 
@@ -168,9 +173,23 @@ td {
 
 input {
 
-	outline: none;
-    border: none;
+    padding: 0px calc(4px + 0.25vw);
     
+	font-family: Oswald-Regular, sans-serif;
+    font-size: calc(16px + 1vw);
+    color: #fff;
+    
+	background: none;
+	border-radius: calc(4px + 0.25vw);
+    border: calc(2px + 0.125vw) solid #fff;
+    
+}
+
+input:disabled {
+
+    color: #faca2c;
+    border: calc(2px + 0.125vw) solid #bfa17b;
+
 }
 
 textarea {
@@ -204,10 +223,12 @@ iframe {
 
 button {
 
-	padding: 0px calc(4px + 0.25vw);
+    padding: 0px calc(4px + 0.25vw);
+    
 	font-family: Oswald-Regular, sans-serif;
     font-size: calc(16px + 1vw);
     color: #fff;
+
 	background: none;
 	border-radius: calc(4px + 0.25vw);
     border: calc(2px + 0.125vw) solid #fff;
@@ -339,7 +360,7 @@ canvas {
 
 /* Contenu principal */
 
-#contenu {
+.contenu {
 
     min-height: 100vh;
 
@@ -382,12 +403,240 @@ canvas {
 
 }
 
+.colonne {
+
+    column-count: 2;
+
+}
+
+#contenuaprendre {
+
+    margin-top: -31.5%;
+
+}
+
+#contenuaprendre:hover {
+
+    cursor: default;
+
+}
+
+#image1enigme2 {
+
+    width: 100%;
+
+}
+
+.image2enigme2 {
+
+    width: 22.75%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+}
+
+.divdragdrop {
+
+    width: 18%;
+    height: 8.25vw;
+    padding: 5%;
+
+}
+
+.divdragdrop .drag {
+
+    width: 200%;
+    height: 190%;
+    margin-top: -50%;
+    margin-bottom: -0px;
+    margin-left: -50%;
+    text-align: center;
+
+}
+
+.divdragdrop .drag:hover {
+
+    cursor: pointer;
+
+}
+
+.dispositionhexagones1 {
+
+    width: 100%;
+    margin-left: 41%;
+    position: relative;
+    display: inline-block;
+
+}
+
+.dispositionhexagones1 div {
+
+    float: left;
+
+}
+
+.dispositionhexagones2 {
+
+    margin-top: -8.5%;
+    width: 100%;
+    margin-left: 13.8%;
+    position: relative;
+    top: -10px;
+    display: inline-block;
+
+}
+
+.dispositionhexagones2 div {
+
+    float: left;
+    margin-left: 9.125%;
+    margin-right: 9.125%;
+
+}
+
+.dispositionhexagones3 {
+
+    margin-top: -8%;
+    width: 100%;
+    position: relative;
+    top: -20px;
+    display: inline-block;
+
+}
+
+.dispositionhexagones3 div {
+
+    float: left;
+
+}
+
+#hexagone4 {
+
+    margin-left: 4.7%;
+    margin-right: 9.175%;
+
+}
+
+#hexagone5 {
+
+    margin-left: 9.175%;
+    margin-right: 9.175%;
+
+}
+
+#hexagone6 {
+
+    margin-left: 9.175%;
+    margin-right: 0px;
+
+}
+
+.dispositionhexagones4 {
+
+    margin-top: -9%;
+    width: 100%;
+    margin-left: 13.8%;
+    position: relative;
+    top: -25px;
+    display: block;
+
+}
+
+.dispositionhexagones4 div {
+
+    float: left;
+    margin-left: 9.125%;
+    margin-right: 9.125%;
+
+}
+
+.dispositionhexagones5 {
+
+    margin-top: -100%;
+    margin-bottom: 3%;
+    width: 18%;
+    margin-left: 41%;
+    position: relative;
+    top: calc(-10vw - 5px);
+    display: inline-block;
+
+}
+
+.dispositionhexagones5 div {
+
+    float: left;
+    width: 100%;
+
+}
+
+.dispositionhexagones5 div .drag {
+
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+
+}
+
+.dispositionhexagones6 {
+
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    margin-bottom: calc(2.5% - 10px);
+
+    top: calc(-1.7vw - 22px);
+
+}
+
+.dispositionhexagones6 div {
+
+    float: left;
+    margin-left: 7.4%;
+    margin-right: 7.4%;
+
+}
+
+.chiffreshexagones {
+
+    font-family: Oswald-SemiBold;
+    font-size: 5vw;
+    color: #000;
+
+}
+
+#suitesboitier {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(170px + 33vw);
+    max-width: 100%;
+    height: auto;
+
+    padding: calc(4px + 1.25vw) calc(8px + 0.5vw);
+    width: calc(175px + 33vw);
+    
+	border-radius: calc(4px + 0.25vw);
+    border: calc(2px + 0.125vw) solid #fff;
+
+}
+
+#lignescode tr td {
+
+    padding: 0.25vw 2vw;
+
+}
+
 .labelderadiobutton {
 
     z-index: 1;
     display: block;
     position: relative;
-    padding-left: calc(20px + 1.125vw);
+    padding-left: calc(48px + 3vw);
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -467,5 +716,13 @@ canvas {
 #sousTitreCanvas {
 
     text-align: center;
+
+}
+
+#note {
+
+    font-family: DDC-Ash, sans-serif;
+    font-size: calc(32px + 4vw);
+    color: #fff;
 
 }

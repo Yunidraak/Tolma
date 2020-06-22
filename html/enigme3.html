@@ -33,7 +33,7 @@
 
                 <td id="soustitre">
 
-                    <h2> A trouver </h2>
+                    <h2> Le boîtier à suite pyramidale </h2>
 
                 </td>
 
@@ -51,26 +51,255 @@
 
     </div>
 
-    <div id="contenu">
+    <div id="enigmesfaites" class="contenu">
 
-        <p> Après leur aventure précédente, quatre des membres de l'équipage se
-            voient projetés sur une tomate volante. <br> Peu après, on commence à se réveiller. Nos aventuriers ont été
-            faits prisonniers au XIX<sup>ème</sup> siècle pour abus d'alcool conséquent, divagations sur la voie
-            publique et non
-            respect de l'uniforme d'un agent, qu'il a bien fallu laver. <br><br> De plus, en dépit de la faible
-            importance
-            des accusations, l'agent en question était le neuveu du comte de Reblochon, éminent memebre de la cour.
-            <br><br> Voilà donc nos héros condamnés à mort ! <br><br> Heureusement pour vous, il leur reste une dernière
-            chance. Le directeur du centre carcéral vous gardant en attendant votre exécution est plutôt joueur. <br> Il
-            laissera à chacun des quatre aventuriers la chance d'être relachés. <br> Pour cela, vous devrez répondre à
-            chacune des quatre énigmes se présentant à vous. Chaque bonne réponse vous permettra de libérer un des
-            membres de l'équipage. Cependant, si vous répondez mal, vous savez à quoi vous attendre... </p>
+        <p> C'est au tour d'Hélêne d'affronter son enigme personnelle. Tout comme Valodia, elle est conduite dans une cellule à
+            l'écart des autres. Cependant, sa cellule à elle ne s'ouvre pas avec des clefs, mais avec un code. <br> Elle trouve
+            un boitier dont le dessus contient des suites de nombres, et un post-it avec noté dessus : Entrez dans le boîtier la
+            somme des nombres de la 2000<sup>ème</sup> ligne. <br> PS : Les erreurs sont toujours prohibées. <br><br> 
+            Ci-dessous, une représentation des suites du boîtier. </p>
 
         <br>
 
-        <a href="enigme1.html"> Passer à la première énigme </a>
+        <fieldset id="suitesboitier">
+
+            <table id="lignescode">
+
+                <tr>
+
+                    <td>
+
+                        <p> Ligne 1 : </p>
+
+                    </td>
+
+                    <td>
+
+                        <p> 1 </p>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+
+                        <p> Ligne 2 : </p>
+
+                    </td>
+
+                    <td>
+
+                        <p> 3 </p>
+
+                    </td>
+
+                    <td>
+
+                        <p> 5 </p>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+
+                        <p> Ligne 3 : </p>
+
+                    </td>
+
+                    <td>
+
+                        <p> 7 </p>
+
+                    </td>
+
+                    <td>
+
+                        <p> 9 </p>
+
+                    </td>
+
+                    <td>
+
+                        <p> 11 </p>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+
+                        <p> Ligne 4 : </p>
+
+                    </td>
+
+                    <td>
+
+                        <p> 13 </p>
+
+                    </td>
+
+                    <td>
+
+                        <p> 15 </p>
+
+                    </td>
+
+                    <td>
+
+                        <p> 17 </p>
+
+                    </td>
+
+                    <td>
+
+                        <p> 19 </p>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+
+                        <p> Ligne 5 : </p>
+
+                    </td>
+
+                    <td>
+
+                        <p> 21 </p>
+
+                    </td>
+
+                    <td>
+
+                        <p> 23 </p>
+
+                    </td>
+
+                    <td>
+
+                        <p> 25 </p>
+
+                    </td>
+
+                    <td>
+
+                        <p> 27 </p>
+
+                    </td>
+
+                    <td>
+
+                        <p> 29 </p>
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </fieldset>
+
+        <br><br>
+
+        <label for="code"> Votre réponse :&nbsp; </label>
+        <input type="number" id="code" name="code" min="0" step="1"></input>
+
+        <br class="espace"><br>
+
+        <table>
+
+            <tr>
+
+                <td>
+
+                    <button id="bontonrepondreenigme" onclick="repondreenigme()"> Confirmer votre réponse </button>
+
+                </td>
+
+                <td>
+
+                    <button id="bontonavoirindice" onclick="donnerindice()"> Avoir un indice <span
+                            id="indicedemande"></span>
+                    </button>
+
+                </td>
+
+            </tr>
+
+        </table>
+
+        <p id="indice1" class="leger"> <br> Indice 1 : Peut-être que cette somme correspond aussi à une autre relation
+            mathématique plus facile à écrire. </p>
+
+        <p id="indice2" class="leger"> <br> Indice 2 : 1 = 1<sup>2</sup>. </p>
+
+        <p id="indice3" class="leger"> <br> Indice 3 : Il serait peut-être préférable d'utiliser votre cerveau pour
+            résoudre
+            cette énigme. </p>
+
+        <div id="bonnereponse">
+
+            <br>
+
+            <p> Hélêne a réussi à suivre les consignes sans gaffer ! <br> Une trappe s'ouvre en dessous du boîtier, elle
+            conduit à l'extérieur du complexe carcéral. <br> Désormais libre, Hélêne s'enfuit et rejoint l'Ascheumne, qui
+            attendait son retour devant Tolma. <br> Une fois Hélêne à bord, l'équipage se réjouit, sans s'attarder sur ce 
+            retour. <br> Il reste encore l'un de nos héros à sauver. </p>
+
+            <br>
+
+            <a href="enigme4.html"> Passer à l'énigme suivante </a>
+
+        </div>
+
+        <div id="mauvaisereponse">
+
+            <br>
+
+            <p> Hélêne n'a pas réussi à suivre les consignes. Elle a gaffé ! <br> Notre héroïne observe que le plafond commence à
+                descendre. <br> Hélêne se résigne, elle ne peut s'enfuir pour rejoindre l'Ascheumne, qui attendait son retour devant
+                Tolma. Elle mourut ainsi écrasée sous un bloc en pierre de plusieurs tonnes, laissant au passage sortir de la sauce
+                tomates avec des petits morceaux. <br> L'équipage peste contre son infortune et pleure Hélêne, mais il ne peut se
+                permettre de s'attarder sur son décès. <br> Il reste encore l'un de nos héros à sauver. </p>
+
+            <br>
+
+            <p> <span class="gras">Hélêne est morte</span>. Mais ne vous inquiétez pas, vous ferez sûrement mieux la
+                prochaine
+                fois.
+            </p> <br>
+
+            <a href="enigme4.html"> Passer à l'énigme suivante </a>
+
+        </div>
 
     </div>
+
+    <div id="enigmesafaire" class="contenu">
+
+        <p> <span class="gras">Oups ! Il semble y avoir une coquille dans vos données !</span> <br><br> Peut-être
+            n'avez-vous pas répondu à toutes les énigmes, mais en tout cas, une chose est sûre : <br> En raison d'un problème
+            technique (venant sûrement de votre part pour avoir voulu faire le malin sans maîtriser ce que vous avez fait), vous
+            ne pouvez pas accéder à cette énigme ! <br> Pour régler ce problème, vous pouvez soit reprendre l'énigme
+            à laquelle vous n'avez pas répondu, soit recommencer depuis le début. <br><br> Bonne chance ! </p>
+
+        <br>
+
+        <a href="enigme1.html"> Recommencer à la première énigme </a>
+
+    </div>
+
+    <script src="../js/enigme3.js"></script>
 
 </body>
 

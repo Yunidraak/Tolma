@@ -4,7 +4,18 @@ document.getElementById("indice2").style.display = "none";
 document.getElementById("indice3").style.display = "none";
 document.getElementById("bonnereponse").style.display = "none";
 document.getElementById("mauvaisereponse").style.display = "none";
+document.getElementById("enigmesafaire").style.display = "none";
 
+if (localStorage.getItem("reponseenigmeprecedente") === "ayayay" || localStorage.getItem("reponseenigmeprecedente") === "ayaymi" || localStorage.getItem("reponseenigmeprecedente") === "aymiay" || localStorage.getItem("reponseenigmeprecedente") === "miayay" || localStorage.getItem("reponseenigmeprecedente") === "aymimi" || localStorage.getItem("reponseenigmeprecedente") === "miaymi" || localStorage.getItem("reponseenigmeprecedente") === "mimiay" || localStorage.getItem("reponseenigmeprecedente") === "mimimi" || localStorage.getItem("reponseenigmeprecedente") === "ayayayay" || localStorage.getItem("reponseenigmeprecedente") === "ayayaymi" || localStorage.getItem("reponseenigmeprecedente") === "ayaymiay" || localStorage.getItem("reponseenigmeprecedente") === "aymiayay" || localStorage.getItem("reponseenigmeprecedente") === "miayayay" || localStorage.getItem("reponseenigmeprecedente") === "ayaymimi" || localStorage.getItem("reponseenigmeprecedente") === "aymiaymi" || localStorage.getItem("reponseenigmeprecedente") === "aymimiay" || localStorage.getItem("reponseenigmeprecedente") === "miayaymi" || localStorage.getItem("reponseenigmeprecedente") === "miaymiay" || localStorage.getItem("reponseenigmeprecedente") === "mimiayay" || localStorage.getItem("reponseenigmeprecedente") === "aymimimi" || localStorage.getItem("reponseenigmeprecedente") === "miaymimi" || localStorage.getItem("reponseenigmeprecedente") === "mimiaymi" || localStorage.getItem("reponseenigmeprecedente") === "mimimiay" || localStorage.getItem("reponseenigmeprecedente") === "mimimimi") {
+
+    // Ne rien faire
+
+} else {
+
+    document.getElementById("enigmesfaites").style.display = "none";
+    document.getElementById("enigmesafaire").style.display = "block";
+
+}
 
 var indiceactuel = 1;
 
@@ -115,6 +126,10 @@ function responsive() {
     ctx.clearRect(3 * cote + ecart, ecart, cote - 2 * ecart, 3 * cote);
 
     // On efface le contenu de rectangles pour faire des ouvertures verticales aux salles sur le canvas
+
+    ctx.fillStyle = "rgb(250, 202, 44)";
+
+    ctx.fillRect(2.5 + ecart / 8, 2.5 + ecart / 8, cote - 3 - ecart / 4, cote - 3 - ecart / 4);
 
 
     ctx.closePath();
@@ -387,6 +402,14 @@ function touchePressee(e) {
 
             ctx.beginPath();
 
+            if (xNouvelIndicateur === 0 && yNouvelIndicateur === 1) {
+
+                ctx.fillStyle = "rgb(250, 202, 44)";
+
+                ctx.fillRect(10 + ecart / 2, 10 + ecart / 2, cote - 17 - ecart, cote - 17 - ecart);
+
+            }
+
             ctx.fillStyle = "rgb(255, 0, 0)";
             ctx.strokeStyle = "rgb(255, 0, 0)";
 
@@ -571,6 +594,14 @@ function touchePressee(e) {
 
             ctx.beginPath();
 
+            if (xNouvelIndicateur === 1 && yNouvelIndicateur === 0) {
+
+                ctx.fillStyle = "rgb(250, 202, 44)";
+
+                ctx.fillRect(10 + ecart / 2, 10 + ecart / 2, cote - 17 - ecart, cote - 17 - ecart);
+
+            }
+
             ctx.fillStyle = "rgb(255, 0, 0)";
             ctx.strokeStyle = "rgb(255, 0, 0)";
 
@@ -748,9 +779,9 @@ function sourisCliquee() {
                 ctx.closePath();
 
                 xAncienIndicateur = xIndicateur,
-                    xIndicateur = xNouvelIndicateur,
-                    yAncienIndicateur = yIndicateur,
-                    yIndicateur = yNouvelIndicateur;
+                xIndicateur = xNouvelIndicateur,
+                yAncienIndicateur = yIndicateur,
+                yIndicateur = yNouvelIndicateur;
 
                 if (xIndicateur === 0 && yIndicateur === 0) {
 
@@ -838,9 +869,9 @@ function sourisCliquee() {
                 ctx.closePath();
 
                 xAncienIndicateur = xIndicateur,
-                    xIndicateur = xNouvelIndicateur,
-                    yAncienIndicateur = yIndicateur,
-                    yIndicateur = yNouvelIndicateur;
+                xIndicateur = xNouvelIndicateur,
+                yAncienIndicateur = yIndicateur,
+                yIndicateur = yNouvelIndicateur;
 
                 if (xIndicateur === 0 && yIndicateur === 0) {
 
@@ -916,6 +947,14 @@ function sourisCliquee() {
                 ctx.clearRect(distance / 2 + xIndicateur * cote, distance / 2 + yIndicateur * cote, distance, distance);
 
                 ctx.beginPath();
+
+                if (xNouvelIndicateur === 0 && yNouvelIndicateur === 1) {
+
+                    ctx.fillStyle = "rgb(250, 202, 44)";
+
+                    ctx.fillRect(10 + ecart / 2, 10 + ecart / 2, cote - 17 - ecart, cote - 17 - ecart);
+
+                }
 
                 ctx.fillStyle = "rgb(255, 0, 0)";
                 ctx.strokeStyle = "rgb(255, 0, 0)";
@@ -1006,6 +1045,14 @@ function sourisCliquee() {
                 ctx.clearRect(distance / 2 + xIndicateur * cote, distance / 2 + yIndicateur * cote, distance, distance);
 
                 ctx.beginPath();
+
+                if (xNouvelIndicateur === 1 && yNouvelIndicateur === 0) {
+
+                    ctx.fillStyle = "rgb(250, 202, 44)";
+
+                    ctx.fillRect(10 + ecart / 2, 10 + ecart / 2, cote - 17 - ecart, cote - 17 - ecart);
+
+                }
 
                 ctx.fillStyle = "rgb(255, 0, 0)";
                 ctx.strokeStyle = "rgb(255, 0, 0)";
@@ -1212,35 +1259,35 @@ function repondreenigme() {
 
         document.getElementById("bonnereponse").style.display = "block";
 
-        if (localStorage.getItem("reponseenigmeprecedente") === "ayayay" || localStorage.getItem("reponseenigmeprecedente") === "ayayaymi") {
+        if (localStorage.getItem("reponseenigmeprecedente") === "ayayay") {
 
             localStorage.setItem("reponseenigmeprecedente", "ayayayay");
 
-        } else if (localStorage.getItem("reponseenigmeprecedente") === "miayay" || localStorage.getItem("reponseenigmeprecedente") === "miayaymi") {
+        } else if (localStorage.getItem("reponseenigmeprecedente") === "miayay") {
 
             localStorage.setItem("reponseenigmeprecedente", "miayayay");
 
-        } else if (localStorage.getItem("reponseenigmeprecedente") === "aymiay" || localStorage.getItem("reponseenigmeprecedente") === "aymiaymi") {
+        } else if (localStorage.getItem("reponseenigmeprecedente") === "aymiay") {
 
             localStorage.setItem("reponseenigmeprecedente", "aymiayay");
 
-        } else if (localStorage.getItem("reponseenigmeprecedente") === "ayaymi" || localStorage.getItem("reponseenigmeprecedente") === "ayaymimi") {
+        } else if (localStorage.getItem("reponseenigmeprecedente") === "ayaymi") {
 
             localStorage.setItem("reponseenigmeprecedente", "ayaymiay");
 
-        } else if (localStorage.getItem("reponseenigmeprecedente") === "mimiay" || localStorage.getItem("reponseenigmeprecedente") === "mimiaymi") {
+        } else if (localStorage.getItem("reponseenigmeprecedente") === "mimiay") {
 
             localStorage.setItem("reponseenigmeprecedente", "mimiayay");
 
-        } else if (localStorage.getItem("reponseenigmeprecedente") === "miaymi" || localStorage.getItem("reponseenigmeprecedente") === "miaymimi") {
+        } else if (localStorage.getItem("reponseenigmeprecedente") === "miaymi") {
 
             localStorage.setItem("reponseenigmeprecedente", "miaymiay");
 
-        } else if (localStorage.getItem("reponseenigmeprecedente") === "aymimi" || localStorage.getItem("reponseenigmeprecedente") === "aymimimi") {
+        } else if (localStorage.getItem("reponseenigmeprecedente") === "aymimi") {
 
             localStorage.setItem("reponseenigmeprecedente", "aymimiay");
 
-        } else if (localStorage.getItem("reponseenigmeprecedente") === "mimimi" || localStorage.getItem("reponseenigmeprecedente") === "mimimimi") {
+        } else if (localStorage.getItem("reponseenigmeprecedente") === "mimimi") {
 
             localStorage.setItem("reponseenigmeprecedente", "mimimiay");
 
@@ -1250,35 +1297,35 @@ function repondreenigme() {
 
         document.getElementById("mauvaisereponse").style.display = "block";
 
-        if (localStorage.getItem("reponseenigmeprecedente") === "ayayay" || localStorage.getItem("reponseenigmeprecedente") === "ayayayay") {
+        if (localStorage.getItem("reponseenigmeprecedente") === "ayayay") {
 
             localStorage.setItem("reponseenigmeprecedente", "ayayaymi");
 
-        } else if (localStorage.getItem("reponseenigmeprecedente") === "miayay" || localStorage.getItem("reponseenigmeprecedente") === "miayayay") {
+        } else if (localStorage.getItem("reponseenigmeprecedente") === "miayay") {
 
             localStorage.setItem("reponseenigmeprecedente", "miayaymi");
 
-        } else if (localStorage.getItem("reponseenigmeprecedente") === "aymiay" || localStorage.getItem("reponseenigmeprecedente") === "aymiayay") {
+        } else if (localStorage.getItem("reponseenigmeprecedente") === "aymiay") {
 
             localStorage.setItem("reponseenigmeprecedente", "aymiaymi");
 
-        } else if (localStorage.getItem("reponseenigmeprecedente") === "ayaymi" || localStorage.getItem("reponseenigmeprecedente") === "ayaymiay") {
+        } else if (localStorage.getItem("reponseenigmeprecedente") === "ayaymi") {
 
             localStorage.setItem("reponseenigmeprecedente", "ayaymimi");
 
-        } else if (localStorage.getItem("reponseenigmeprecedente") === "mimiay" || localStorage.getItem("reponseenigmeprecedente") === "mimiayay") {
+        } else if (localStorage.getItem("reponseenigmeprecedente") === "mimiay") {
 
             localStorage.setItem("reponseenigmeprecedente", "mimiaymi");
 
-        } else if (localStorage.getItem("reponseenigmeprecedente") === "miaymi" || localStorage.getItem("reponseenigmeprecedente") === "miaymiay") {
+        } else if (localStorage.getItem("reponseenigmeprecedente") === "miaymi") {
 
             localStorage.setItem("reponseenigmeprecedente", "miaymimi");
 
-        } else if (localStorage.getItem("reponseenigmeprecedente") === "aymimi" || localStorage.getItem("reponseenigmeprecedente") === "aymimiay") {
+        } else if (localStorage.getItem("reponseenigmeprecedente") === "aymimi") {
 
             localStorage.setItem("reponseenigmeprecedente", "aymimimi");
 
-        } else if (localStorage.getItem("reponseenigmeprecedente") === "mimimi" || localStorage.getItem("reponseenigmeprecedente") === "mimimiay") {
+        } else if (localStorage.getItem("reponseenigmeprecedente") === "mimimi") {
 
             localStorage.setItem("reponseenigmeprecedente", "mimimimi");
 
